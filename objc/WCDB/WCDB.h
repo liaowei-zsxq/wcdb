@@ -87,4 +87,12 @@
 
 #endif //WCDB_OMIT_DEPRECATED
 
+// Fix warning: umbrella header for module 'WCDB' does not include header 'XXX.hpp'
+#import <WCDB/concurrent_list.hpp>
+#import <WCDB/file.hpp>
+#import <WCDB/path.hpp>
+#import <WCDB/fts_modules.hpp>
+#import <WCDB/spin.hpp>
+#import <WCDB/recyclable.hpp>
+
 #endif /* WCDB_h */
