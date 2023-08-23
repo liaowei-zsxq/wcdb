@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -3094,7 +3094,6 @@
 		75EB1A10287F0EB900AA62F7 /* StatementCreateViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75EB1A0E287F0E3700AA62F7 /* StatementCreateViewTests.swift */; };
 		75EB1A13287F10BF00AA62F7 /* StatementCreateTriggerBridge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75EB1A11287F10BF00AA62F7 /* StatementCreateTriggerBridge.cpp */; };
 		75EB1A14287F10BF00AA62F7 /* StatementCreateTriggerBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = 75EB1A12287F10BF00AA62F7 /* StatementCreateTriggerBridge.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		75EF9FC0295CAAF0006FD60F /* WCTBridgeProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 036E50B828115B1D007365CD /* WCTBridgeProperty.mm */; };
 		75F1A3062871DE9A008503A2 /* StatementCreateVirtualTableBridge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75F1A3042871DE9A008503A2 /* StatementCreateVirtualTableBridge.cpp */; };
 		75F1A3072871DE9A008503A2 /* StatementCreateVirtualTableBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = 75F1A3052871DE9A008503A2 /* StatementCreateVirtualTableBridge.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		75F1A30A2871E764008503A2 /* StatementDeleteBridge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75F1A3082871E764008503A2 /* StatementDeleteBridge.cpp */; };
@@ -8881,15 +8880,13 @@
 		23B5F75B1E1111C100E58396 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1020;
-				LastUpgradeCheck = 1100;
+				LastUpgradeCheck = 1500;
 				ORGANIZATIONNAME = sanhuazhang;
 				TargetAttributes = {
 					03330FA828167ECC0094CFCF = {
 						LastSwiftMigration = 1320;
-					};
-					037C38D02897E33600328EC8 = {
-						ProvisioningStyle = Manual;
 					};
 					234F035B227A9CFE00DD65A2 = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -8900,7 +8897,6 @@
 					};
 					239326601E836D7300D677CC = {
 						CreatedOnToolsVersion = 8.2;
-						ProvisioningStyle = Manual;
 					};
 					239E8A6F2160A5B100BCB308 = {
 						CreatedOnToolsVersion = 10.0;
@@ -10294,7 +10290,6 @@
 				7521D7B7291E9ABB009642EF /* Pragma.cpp in Sources */,
 				7521D7B8291E9ABB009642EF /* UpgradeableErrorProne.cpp in Sources */,
 				7521D7BA291E9ABB009642EF /* WCTDatabase+Version.mm in Sources */,
-				75EF9FC0295CAAF0006FD60F /* WCTBridgeProperty.mm in Sources */,
 				7521D7BC291E9ABB009642EF /* AuxiliaryFunctionModules.cpp in Sources */,
 				7521D7BD291E9ABB009642EF /* SharedThreadedErrorProne.cpp in Sources */,
 				7521D7BE291E9ABB009642EF /* LiteralValue.cpp in Sources */,
@@ -10898,6 +10893,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 234F042F227A9EFA00DD65A2 /* Tests.xcconfig */;
 			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				SWIFT_OBJC_BRIDGING_HEADER = "bridge/tests/common/SwiftBridgeObjcTest-Bridging-Header.h";
 			};
 			name = Debug;
@@ -10906,6 +10902,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 234F042F227A9EFA00DD65A2 /* Tests.xcconfig */;
 			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				SWIFT_OBJC_BRIDGING_HEADER = "bridge/tests/common/SwiftBridgeObjcTest-Bridging-Header.h";
 			};
 			name = Release;
@@ -10914,8 +10911,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 234F0370227A9E3D00DD65A2 /* WCDB.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				MODULEMAP_FILE = "$(SRCROOT)/support/WCDBCpp.modulemap";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -10923,8 +10925,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 234F0370227A9E3D00DD65A2 /* WCDB.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				MODULEMAP_FILE = "$(SRCROOT)/support/WCDBCpp.modulemap";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
@@ -10932,6 +10939,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 234F042F227A9EFA00DD65A2 /* Tests.xcconfig */;
 			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 			};
 			name = Debug;
 		};
@@ -10939,6 +10947,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 234F042F227A9EFA00DD65A2 /* Tests.xcconfig */;
 			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 			};
 			name = Release;
 		};
@@ -10946,6 +10955,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 234F042F227A9EFA00DD65A2 /* Tests.xcconfig */;
 			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 			};
 			name = Debug;
 		};
@@ -10953,6 +10963,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 234F042F227A9EFA00DD65A2 /* Tests.xcconfig */;
 			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 			};
 			name = Release;
 		};
@@ -10960,6 +10971,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 234F042F227A9EFA00DD65A2 /* Tests.xcconfig */;
 			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 			};
 			name = Debug;
 		};
@@ -10967,6 +10979,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 234F042F227A9EFA00DD65A2 /* Tests.xcconfig */;
 			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 			};
 			name = Release;
 		};
@@ -10974,6 +10987,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 234F042F227A9EFA00DD65A2 /* Tests.xcconfig */;
 			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = WCDB_QUICK_TESTS;
 			};
 			name = Debug;
@@ -10982,6 +10996,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 234F042F227A9EFA00DD65A2 /* Tests.xcconfig */;
 			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 			};
 			name = Release;
 		};
@@ -10989,6 +11004,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 234F0370227A9E3D00DD65A2 /* WCDB.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"$(WCDB_VERSION_DEFINITIONS)",
@@ -10999,8 +11017,10 @@
 					"WCDB_TESTS=1",
 				);
 				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				MODULEMAP_FILE = "$(SRCROOT)/support/WCDB.modulemap";
 				OTHER_SWIFT_FLAGS = "-no-verify-emitted-module-interface";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "WCDB_SWIFT_BRIDGE_OBJC WCDB_QUICK_TESTS";
 			};
 			name = Debug;
@@ -11009,6 +11029,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 234F0370227A9E3D00DD65A2 /* WCDB.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"$(WCDB_VERSION_DEFINITIONS)",
@@ -11018,8 +11041,10 @@
 					"WCDB_SWIFT_BRIDGE_OBJC=1",
 				);
 				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				MODULEMAP_FILE = "$(SRCROOT)/support/WCDB.modulemap";
 				OTHER_SWIFT_FLAGS = "-no-verify-emitted-module-interface";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = WCDB_SWIFT_BRIDGE_OBJC;
 			};
 			name = Release;
@@ -11031,6 +11056,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Tencent.WCDB.Host;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
@@ -11043,6 +11069,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Tencent.WCDB.Host;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
@@ -11052,14 +11079,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 234F036A227A9E3C00DD65A2 /* Debug.xcconfig */;
 			buildSettings = {
-				ARCHS = (
-					"$(ARCHS_STANDARD)",
-					arm64e,
-				);
 				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
 				DEAD_CODE_STRIPPING = YES;
+				ENABLE_MODULE_VERIFIER = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
 				SWIFT_ENFORCE_EXCLUSIVE_ACCESS = "debug-only";
 				SWIFT_VERSION = 5.0;
 				TVOS_DEPLOYMENT_TARGET = 12.0;
@@ -11071,14 +11098,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 234F036C227A9E3D00DD65A2 /* Release.xcconfig */;
 			buildSettings = {
-				ARCHS = (
-					"$(ARCHS_STANDARD)",
-					arm64e,
-				);
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				DEAD_CODE_STRIPPING = YES;
+				ENABLE_MODULE_VERIFIER = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
 				SWIFT_ENFORCE_EXCLUSIVE_ACCESS = "debug-only";
 				SWIFT_VERSION = 5.0;
 				TVOS_DEPLOYMENT_TARGET = 12.0;
@@ -11090,8 +11117,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 234F0370227A9E3D00DD65A2 /* WCDB.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				MODULEMAP_FILE = "$(SRCROOT)/support/WCDBObjc.modulemap";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -11099,8 +11131,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 234F0370227A9E3D00DD65A2 /* WCDB.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				MODULEMAP_FILE = "$(SRCROOT)/support/WCDBObjc.modulemap";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
@@ -11108,8 +11145,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 234F0370227A9E3D00DD65A2 /* WCDB.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				MODULEMAP_FILE = "$(SRCROOT)/support/WCDBSwift.modulemap";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -11117,8 +11159,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 234F0370227A9E3D00DD65A2 /* WCDB.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				MODULEMAP_FILE = "$(SRCROOT)/support/WCDBSwift.modulemap";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
