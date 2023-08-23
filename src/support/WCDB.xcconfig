@@ -1,7 +1,7 @@
 #include "../../sqlcipher/macosx/SQLite.xcconfig"
 
 // Linking
-MACH_O_TYPE = mh_dylib
+MACH_O_TYPE = staticlib
 
 // Packaging
 INFOPLIST_FILE = $(SRCROOT)/support/Info.plist
@@ -12,3 +12,6 @@ MARKETING_VERSION = 1.1.0
 
 // Preprocessing
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) $(WCDB_VERSION_DEFINITIONS) $(SQLITE_PREPROCESSOR_DEFINITIONS) ZLIB_CONST=1 SQLITE_WCDB=1
+
+// Module verify
+ENABLE_MODULE_VERIFIER = NO
