@@ -16,7 +16,6 @@ STRIP_STYLE = non-global
 DEAD_CODE_STRIPPING = YES
 
 // Code Generation
-LLVM_LTO = YES
 GCC_OPTIMIZATION_LEVEL = s
 
 // Preprocessing
