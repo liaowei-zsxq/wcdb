@@ -1,6 +1,9 @@
 # Visual Studio Code
 .vscode
 
+# Visual Studio
+.vs
+
 # Android Studio, Gradle
 *.iml
 .gradle
@@ -17,3 +20,10 @@ xcuserdata
 xcuserdata/*
 *.xcworkspace/*
 *.xcworkspace
+DerivedData
+
+#CMake
+tools/version/build/
+
+# WCDB
+WCDB.framework

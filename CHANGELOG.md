@@ -1,3 +1,41 @@
+## v2.0.3
+
+* Transaction supports nesting
+* Some bug fix for data migration
+* Fix compile error in new Xcode
+
+## v2.0.2.5
+
+* Fix compile issue caused by header
+
+## v2.0.2
+
+* WCDB C++ supports Windows
+* Optimizie C++ ORM performance
+* Downgrade the minimum supported system version for iPhone and Apple watch
+
+## v2.0.1
+
+* Support databases created by old versions of sqlcipher
+* Fix crash of WCDB Swift in x86 emulator
+* Support insertOrIgnore
+
+## v2.0.0
+
+* Add WCDB C++
+* New implementation of WCDB Swift
+* New implementation of Winq
+* New implementation of database repair
+* Support data migration
+* Support FTS5
+
+## v1.1.0
+
+#### iOS/macOS
+* Support Swift 5 for Xcode 14.
+* Fix compile error for SQLCipher 4.1.0.
+* Fix some bug.
+
 ## v1.0.8.2
 
 #### iOS/macOS
