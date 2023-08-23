@@ -3,4 +3,4 @@
 	url = https://github.com/openssl/openssl.git
 [submodule "sqlcipher"]
 	path = sqlcipher
-	url = https://github.com/liaowei-zsxq/sqlcipher.git
+	url = https://github.com/unnoo/sqlcipher.git

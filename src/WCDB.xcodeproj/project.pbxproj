@@ -11025,6 +11025,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 234F0370227A9E3D00DD65A2 /* WCDB.xcconfig */;
 			buildSettings = {
+				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "$(SRCROOT)/support/WCDBCpp.modulemap";
 			};
 			name = Debug;
@@ -11033,6 +11034,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 234F0370227A9E3D00DD65A2 /* WCDB.xcconfig */;
 			buildSettings = {
+				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "$(SRCROOT)/support/WCDBCpp.modulemap";
 			};
 			name = Release;
@@ -11107,6 +11109,7 @@
 					"WCDB_SWIFT_BRIDGE_OBJC=1",
 					"WCDB_TESTS=1",
 				);
+				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "$(SRCROOT)/support/WCDB.modulemap";
 				OTHER_SWIFT_FLAGS = "-no-verify-emitted-module-interface";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "WCDB_SWIFT_BRIDGE_OBJC WCDB_QUICK_TESTS";
@@ -11125,6 +11128,7 @@
 					"SQLITE_WCDB=1",
 					"WCDB_SWIFT_BRIDGE_OBJC=1",
 				);
+				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "$(SRCROOT)/support/WCDB.modulemap";
 				OTHER_SWIFT_FLAGS = "-no-verify-emitted-module-interface";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = WCDB_SWIFT_BRIDGE_OBJC;
@@ -11189,6 +11193,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 234F0370227A9E3D00DD65A2 /* WCDB.xcconfig */;
 			buildSettings = {
+				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "$(SRCROOT)/support/WCDBObjc.modulemap";
 			};
 			name = Debug;
@@ -11197,6 +11202,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 234F0370227A9E3D00DD65A2 /* WCDB.xcconfig */;
 			buildSettings = {
+				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "$(SRCROOT)/support/WCDBObjc.modulemap";
 			};
 			name = Release;
@@ -11205,6 +11211,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 234F0370227A9E3D00DD65A2 /* WCDB.xcconfig */;
 			buildSettings = {
+				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "$(SRCROOT)/support/WCDBSwift.modulemap";
 			};
 			name = Debug;
@@ -11213,6 +11220,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 234F0370227A9E3D00DD65A2 /* WCDB.xcconfig */;
 			buildSettings = {
+				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "$(SRCROOT)/support/WCDBSwift.modulemap";
 			};
 			name = Release;
