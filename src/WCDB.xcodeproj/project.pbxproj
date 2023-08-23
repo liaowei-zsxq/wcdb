@@ -10912,7 +10912,6 @@
 			baseConfigurationReference = 234F0370227A9E3D00DD65A2 /* WCDB.xcconfig */;
 			buildSettings = {
 				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				MODULEMAP_FILE = "$(SRCROOT)/support/WCDBCpp.modulemap";
 			};
 			name = Debug;
@@ -10922,7 +10921,6 @@
 			baseConfigurationReference = 234F0370227A9E3D00DD65A2 /* WCDB.xcconfig */;
 			buildSettings = {
 				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				MODULEMAP_FILE = "$(SRCROOT)/support/WCDBCpp.modulemap";
 			};
 			name = Release;
@@ -11006,7 +11004,6 @@
 					"WCDB_TESTS=1",
 				);
 				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				MODULEMAP_FILE = "$(SRCROOT)/support/WCDB.modulemap";
 				OTHER_SWIFT_FLAGS = "-no-verify-emitted-module-interface";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "WCDB_SWIFT_BRIDGE_OBJC WCDB_QUICK_TESTS";
@@ -11026,7 +11023,6 @@
 					"WCDB_SWIFT_BRIDGE_OBJC=1",
 				);
 				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				MODULEMAP_FILE = "$(SRCROOT)/support/WCDB.modulemap";
 				OTHER_SWIFT_FLAGS = "-no-verify-emitted-module-interface";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = WCDB_SWIFT_BRIDGE_OBJC;
@@ -11103,7 +11099,6 @@
 			baseConfigurationReference = 234F0370227A9E3D00DD65A2 /* WCDB.xcconfig */;
 			buildSettings = {
 				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				MODULEMAP_FILE = "$(SRCROOT)/support/WCDBObjc.modulemap";
 			};
 			name = Debug;
@@ -11113,7 +11108,6 @@
 			baseConfigurationReference = 234F0370227A9E3D00DD65A2 /* WCDB.xcconfig */;
 			buildSettings = {
 				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				MODULEMAP_FILE = "$(SRCROOT)/support/WCDBObjc.modulemap";
 			};
 			name = Release;
@@ -11123,7 +11117,6 @@
 			baseConfigurationReference = 234F0370227A9E3D00DD65A2 /* WCDB.xcconfig */;
 			buildSettings = {
 				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				MODULEMAP_FILE = "$(SRCROOT)/support/WCDBSwift.modulemap";
 			};
 			name = Debug;
@@ -11133,7 +11126,6 @@
 			baseConfigurationReference = 234F0370227A9E3D00DD65A2 /* WCDB.xcconfig */;
 			buildSettings = {
 				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				MODULEMAP_FILE = "$(SRCROOT)/support/WCDBSwift.modulemap";
 			};
 			name = Release;
