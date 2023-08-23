@@ -8717,8 +8717,6 @@
 				037C38D32897E33600328EC8 /* Sources */,
 				037C3A802897E33600328EC8 /* Frameworks */,
 				037C3A852897E33600328EC8 /* Headers */,
-				037C3C072897E33600328EC8 /* Resources */,
-				037C3C082897E33600328EC8 /* Install Code Snippets and File Templates */,
 			);
 			buildRules = (
 			);
@@ -8813,8 +8811,6 @@
 				2393265C1E836D7300D677CC /* Sources */,
 				2393265D1E836D7300D677CC /* Frameworks */,
 				2393265E1E836D7300D677CC /* Headers */,
-				2393265F1E836D7300D677CC /* Resources */,
-				23467D0B2230ED8F00A77DF1 /* Install Code Snippets and File Templates */,
 			);
 			buildRules = (
 			);
@@ -8850,8 +8846,6 @@
 				7521D6C1291E9ABB009642EF /* Sources */,
 				7521D88D291E9ABB009642EF /* Frameworks */,
 				7521D892291E9ABB009642EF /* Headers */,
-				7521DA42291E9ABB009642EF /* Resources */,
-				7521DA43291E9ABB009642EF /* Install Code Snippets and File Templates */,
 			);
 			buildRules = (
 			);
@@ -8870,8 +8864,6 @@
 				7521DA57291EA349009642EF /* Sources */,
 				7521DC23291EA349009642EF /* Frameworks */,
 				7521DC28291EA349009642EF /* Headers */,
-				7521DDD8291EA349009642EF /* Resources */,
-				7521DDD9291EA349009642EF /* Install Code Snippets and File Templates */,
 			);
 			buildRules = (
 			);
@@ -8967,13 +8959,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		037C3C072897E33600328EC8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		03BF4B1B2888F87C00A30500 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -9002,13 +8987,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2393265F1E836D7300D677CC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		239E8A6E2160A5B100BCB308 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -9016,96 +8994,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7521DA42291E9ABB009642EF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7521DDD8291EA349009642EF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		037C3C082897E33600328EC8 /* Install Code Snippets and File Templates */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Install Code Snippets and File Templates";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if [ \"$ACTION\" = \"build\" ]; then \n    (cd ${SRCROOT}/../tools/templates && sh install.sh) || true\nfi\n";
-		};
-		23467D0B2230ED8F00A77DF1 /* Install Code Snippets and File Templates */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Install Code Snippets and File Templates";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if [ \"$ACTION\" = \"build\" ]; then \n    (cd ${SRCROOT}/../tools/templates && sh install.sh) || true\nfi\n";
-		};
-		7521DA43291E9ABB009642EF /* Install Code Snippets and File Templates */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Install Code Snippets and File Templates";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if [ \"$ACTION\" = \"build\" ]; then \n    (cd ${SRCROOT}/../tools/templates && sh install.sh) || true\nfi\n";
-		};
-		7521DDD9291EA349009642EF /* Install Code Snippets and File Templates */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Install Code Snippets and File Templates";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if [ \"$ACTION\" = \"build\" ]; then \n    (cd ${SRCROOT}/../tools/templates && sh install.sh) || true\nfi\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		03330FAD28167ECC0094CFCF /* Sources */ = {
