@@ -847,6 +847,12 @@
 		0DE08A2B29CBEB4E009A7CA3 /* WCTFileManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0DE08A1C29CBE79C009A7CA3 /* WCTFileManager.cpp */; };
 		0DF1089629C05559004ED764 /* StatementSelectInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF1089529C05559004ED764 /* StatementSelectInterface.swift */; };
 		0DF1089729C05559004ED764 /* StatementSelectInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF1089529C05559004ED764 /* StatementSelectInterface.swift */; };
+		15F85FCA2A999EA10029D7E1 /* WCTCancellationSignal.h in Headers */ = {isa = PBXBuildFile; fileRef = 15F85FC72A999EA10029D7E1 /* WCTCancellationSignal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		15F85FCB2A999EA10029D7E1 /* WCTCancellationSignal.h in Headers */ = {isa = PBXBuildFile; fileRef = 15F85FC72A999EA10029D7E1 /* WCTCancellationSignal.h */; };
+		15F85FCC2A999EA10029D7E1 /* WCTCancellationSignal.mm in Sources */ = {isa = PBXBuildFile; fileRef = 15F85FC82A999EA10029D7E1 /* WCTCancellationSignal.mm */; };
+		15F85FCD2A999EA10029D7E1 /* WCTCancellationSignal.mm in Sources */ = {isa = PBXBuildFile; fileRef = 15F85FC82A999EA10029D7E1 /* WCTCancellationSignal.mm */; };
+		15F85FCE2A999EA10029D7E1 /* WCTCancellationSignal+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 15F85FC92A999EA10029D7E1 /* WCTCancellationSignal+Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		15F85FCF2A999EA10029D7E1 /* WCTCancellationSignal+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 15F85FC92A999EA10029D7E1 /* WCTCancellationSignal+Private.h */; };
 		2304B42822156CD700901953 /* TokenizerModule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2304B42622156CD700901953 /* TokenizerModule.cpp */; };
 		2304B42A22156CD700901953 /* TokenizerModule.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2304B42722156CD700901953 /* TokenizerModule.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
 		2304B42E22156E1500901953 /* TokenizerModules.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2304B42C22156E1500901953 /* TokenizerModules.cpp */; };
@@ -3574,6 +3580,9 @@
 		0DE08A1D29CBE79C009A7CA3 /* CrossPlatform.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CrossPlatform.c; sourceTree = "<group>"; };
 		0DE08A1E29CBE79C009A7CA3 /* WCTOperationQueue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WCTOperationQueue.cpp; sourceTree = "<group>"; };
 		0DF1089529C05559004ED764 /* StatementSelectInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementSelectInterface.swift; sourceTree = "<group>"; };
+		15F85FC72A999EA10029D7E1 /* WCTCancellationSignal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCTCancellationSignal.h; sourceTree = "<group>"; };
+		15F85FC82A999EA10029D7E1 /* WCTCancellationSignal.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = WCTCancellationSignal.mm; sourceTree = "<group>"; };
+		15F85FC92A999EA10029D7E1 /* WCTCancellationSignal+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WCTCancellationSignal+Private.h"; sourceTree = "<group>"; };
 		2304B42622156CD700901953 /* TokenizerModule.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TokenizerModule.cpp; sourceTree = "<group>"; };
 		2304B42722156CD700901953 /* TokenizerModule.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TokenizerModule.hpp; sourceTree = "<group>"; };
 		2304B42C22156E1500901953 /* TokenizerModules.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TokenizerModules.cpp; sourceTree = "<group>"; };
@@ -5840,11 +5849,14 @@
 		234DBCEB2064DD0B000E31E8 /* handle */ = {
 			isa = PBXGroup;
 			children = (
+				15F85FC72A999EA10029D7E1 /* WCTCancellationSignal.h */,
+				15F85FC82A999EA10029D7E1 /* WCTCancellationSignal.mm */,
+				15F85FC92A999EA10029D7E1 /* WCTCancellationSignal+Private.h */,
 				234DBCEC2064DD0B000E31E8 /* WCTDatabase+Handle.h */,
 				234DBCED2064DD0B000E31E8 /* WCTDatabase+Handle.mm */,
-				234DBCF02064DD0B000E31E8 /* WCTHandle+Private.h */,
 				234DBCF12064DD0B000E31E8 /* WCTHandle.h */,
 				234DBCF22064DD0B000E31E8 /* WCTHandle.mm */,
+				234DBCF02064DD0B000E31E8 /* WCTHandle+Private.h */,
 			);
 			path = handle;
 			sourceTree = "<group>";
@@ -7592,6 +7604,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15F85FCA2A999EA10029D7E1 /* WCTCancellationSignal.h in Headers */,
 				23B4DCE32112B03C00954D71 /* AsyncQueue.hpp in Headers */,
 				23301BFB229A851800A8AB5A /* AutoBackupConfig.hpp in Headers */,
 				23EEDCE7217DFADC006E9E73 /* WINQ.h in Headers */,
@@ -7851,6 +7864,7 @@
 				237A65F520F731DF008B4771 /* UniqueList.hpp in Headers */,
 				2370980B20590CA700E768B4 /* HandleStatement.hpp in Headers */,
 				7543DD83271C2F3B00B533B4 /* FTS5AuxiliaryFunctionTemplate.hpp in Headers */,
+				15F85FCE2A999EA10029D7E1 /* WCTCancellationSignal+Private.h in Headers */,
 				23BBE2A8204955CE00C4CBB6 /* WCTCommon.h in Headers */,
 				23C7559320DCF90F00031A93 /* SQLiteLocker.hpp in Headers */,
 				2370B12721914ED500D3227C /* NSData+WCTColumnCoding.h in Headers */,
@@ -8087,6 +8101,7 @@
 				7521D8CC291E9ABB009642EF /* SyntaxSelectSTMT.hpp in Headers */,
 				7521D8CD291E9ABB009642EF /* WCTPreparedStatement+Private.h in Headers */,
 				75D566FC2951B7DE00098DD9 /* WCTSequence.h in Headers */,
+				15F85FCF2A999EA10029D7E1 /* WCTCancellationSignal+Private.h in Headers */,
 				7521D8CE291E9ABB009642EF /* PerformanceTraceConfig.hpp in Headers */,
 				7521D8CF291E9ABB009642EF /* ColumnMeta.hpp in Headers */,
 				7521D8D0291E9ABB009642EF /* WCTHandle+Table.h in Headers */,
@@ -8114,6 +8129,7 @@
 				7521D8E9291E9ABB009642EF /* CaseInsensitiveList.hpp in Headers */,
 				7521D8EB291E9ABB009642EF /* SyntaxForwardDeclaration.h in Headers */,
 				7521D8EC291E9ABB009642EF /* WCTDatabase+Config.h in Headers */,
+				15F85FCB2A999EA10029D7E1 /* WCTCancellationSignal.h in Headers */,
 				7521D8ED291E9ABB009642EF /* WCTDatabase+Repair.h in Headers */,
 				7521D8EE291E9ABB009642EF /* MigrationInfo.hpp in Headers */,
 				7521D8F0291E9ABB009642EF /* StatementCreateIndex.hpp in Headers */,
@@ -9749,6 +9765,7 @@
 				7543DD86271C2FD000B533B4 /* AuxiliaryFunctionModule.cpp in Sources */,
 				75D99B8428CA46A400BEC8B5 /* BaseOperation.cpp in Sources */,
 				234EF46F2015CFDE00B81929 /* WCTConvertible.mm in Sources */,
+				15F85FCC2A999EA10029D7E1 /* WCTCancellationSignal.mm in Sources */,
 				03E1660D27F42D6500D2C926 /* StatementDropTable.swift in Sources */,
 				23EEDCB5217DFADC006E9E73 /* StatementAlterTable.cpp in Sources */,
 				23F70FAC20A055C300CCE3CD /* CipherConfig.cpp in Sources */,
@@ -10359,6 +10376,7 @@
 				7521D828291E9ABB009642EF /* StatementPragma.cpp in Sources */,
 				7521D829291E9ABB009642EF /* MergeFTSIndexLogic.cpp in Sources */,
 				7521D82A291E9ABB009642EF /* SyntaxAnalyzeSTMT.cpp in Sources */,
+				15F85FCD2A999EA10029D7E1 /* WCTCancellationSignal.mm in Sources */,
 				7521D82C291E9ABB009642EF /* SyntaxQualifiedTableName.cpp in Sources */,
 				7521D82D291E9ABB009642EF /* SyntaxSchema.cpp in Sources */,
 				7521D82E291E9ABB009642EF /* WCTProperty.mm in Sources */,
