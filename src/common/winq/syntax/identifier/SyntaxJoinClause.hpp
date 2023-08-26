@@ -33,7 +33,7 @@ namespace Syntax {
 class TableOrSubquery;
 class JoinConstraint;
 
-class JoinClause final : public Identifier {
+class WCDB_API JoinClause final : public Identifier {
 #pragma mark - Lang
 public:
     ~JoinClause() override final;

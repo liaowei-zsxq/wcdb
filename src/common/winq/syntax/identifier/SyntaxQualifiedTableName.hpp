@@ -30,7 +30,7 @@ namespace WCDB {
 
 namespace Syntax {
 
-class QualifiedTableName final : public Identifier {
+class WCDB_API QualifiedTableName final : public Identifier {
 #pragma mark - Lang
 public:
     ~QualifiedTableName() override final;

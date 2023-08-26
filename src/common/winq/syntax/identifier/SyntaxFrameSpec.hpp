@@ -33,7 +33,7 @@ namespace Syntax {
 
 class Expression;
 
-class FrameSpec final : public Identifier {
+class WCDB_API FrameSpec final : public Identifier {
 #pragma mark - Lang
 public:
     ~FrameSpec() override final;

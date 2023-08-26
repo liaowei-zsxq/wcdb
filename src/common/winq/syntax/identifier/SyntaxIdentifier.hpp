@@ -37,7 +37,7 @@ namespace WCDB {
 
 namespace Syntax {
 
-class Identifier : public Cloneable<Identifier> {
+class WCDB_API Identifier : public Cloneable<Identifier> {
 public:
     virtual ~Identifier() override = 0;
 

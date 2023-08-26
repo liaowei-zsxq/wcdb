@@ -32,7 +32,7 @@ namespace Syntax {
 
 class Expression;
 
-class Filter final : public Identifier {
+class WCDB_API Filter final : public Identifier {
 #pragma mark - Lang
 public:
     ~Filter() override final;

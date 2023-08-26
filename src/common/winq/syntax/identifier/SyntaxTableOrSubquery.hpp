@@ -32,7 +32,7 @@ namespace WCDB {
 
 namespace Syntax {
 
-class TableOrSubquery final : public Identifier {
+class WCDB_API TableOrSubquery final : public Identifier {
 #pragma mark - Lang
 public:
     ~TableOrSubquery() override final;

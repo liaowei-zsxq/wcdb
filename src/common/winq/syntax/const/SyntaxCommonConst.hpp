@@ -24,6 +24,8 @@
 
 #pragma once
 
+#include "Macro.h"
+
 namespace WCDB {
 
 class UnsafeStringView;
@@ -95,11 +97,11 @@ enum class MatchType : signed char {
     Partial,
 };
 
-extern const StringView& masterTable;
-extern const StringView& sequenceTable;
-extern const StringView& mainSchema;
-extern const StringView& tempSchema;
-extern const StringView& builtinTablePrefix;
+WCDBLiteralStringDefine(masterTable, "sqlite_master");
+WCDBLiteralStringDefine(sequenceTable, "sqlite_sequence");
+WCDBLiteralStringDefine(mainSchema, "main");
+WCDBLiteralStringDefine(tempSchema, "temp");
+WCDBLiteralStringDefine(builtinTablePrefix, "sqlite_");
 
 } // namespace Syntax
 

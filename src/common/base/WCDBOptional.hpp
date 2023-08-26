@@ -24,6 +24,7 @@
 
 #pragma once
 
+#include "Macro.h"
 #include <memory>
 #include <type_traits>
 
@@ -38,7 +39,7 @@ struct NullOpt_T {
 
 constexpr NullOpt_T NullOpt{ NullOpt_T::SecretTag{}, NullOpt_T::SecretTag{} };
 
-class _OptionalValueFlag {
+class WCDB_API _OptionalValueFlag {
     template<typename U>
     friend class Optional;
 

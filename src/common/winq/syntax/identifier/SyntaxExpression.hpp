@@ -38,7 +38,7 @@ namespace Syntax {
 
 class SelectSTMT;
 
-class ExpressionUnionMember {
+class WCDB_API ExpressionUnionMember {
 public:
     ExpressionUnionMember();
     ~ExpressionUnionMember();
@@ -122,7 +122,7 @@ protected:
     void assignFromOther(T&& member);
 };
 
-class Expression final : public Identifier, public ExpressionUnionMember {
+class WCDB_API Expression final : public Identifier, public ExpressionUnionMember {
 public:
     ~Expression() override final;
 

@@ -164,7 +164,7 @@ struct ColumnInfo<T, typename std::enable_if<ColumnIsBLOBType<T>::value>::type>
 #pragma mark - Builtin Type
 //NULL
 template<>
-struct ColumnIsNullType<std::nullptr_t> : public std::true_type {
+struct WCDB_API ColumnIsNullType<std::nullptr_t> : public std::true_type {
 public:
     static ColumnTypeInfo<ColumnType::Null>::UnderlyingType
     asUnderlyingType(const std::nullptr_t &);
@@ -195,7 +195,7 @@ public:
 
 //Text
 template<>
-struct ColumnIsTextType<const char *> : public std::true_type {
+struct WCDB_API ColumnIsTextType<const char *> : public std::true_type {
 public:
     static ColumnTypeInfo<ColumnType::Text>::UnderlyingType
     asUnderlyingType(const char *text);
@@ -204,7 +204,7 @@ public:
 };
 
 template<>
-struct ColumnIsTextType<char *> : public std::true_type {
+struct WCDB_API ColumnIsTextType<char *> : public std::true_type {
 public:
     static ColumnTypeInfo<ColumnType::Text>::UnderlyingType
     asUnderlyingType(const char *text);
@@ -235,7 +235,7 @@ public:
 };
 
 template<>
-struct ColumnIsTextType<std::string> : public std::true_type {
+struct WCDB_API ColumnIsTextType<std::string> : public std::true_type {
 public:
     static ColumnTypeInfo<ColumnType::Text>::UnderlyingType
     asUnderlyingType(const std::string &text);
@@ -244,7 +244,7 @@ public:
 };
 
 template<>
-struct ColumnIsTextType<UnsafeStringView> : public std::true_type {
+struct WCDB_API ColumnIsTextType<UnsafeStringView> : public std::true_type {
 public:
     static ColumnTypeInfo<ColumnType::Text>::UnderlyingType
     asUnderlyingType(const UnsafeStringView &text);
@@ -253,7 +253,7 @@ public:
 };
 
 template<>
-struct ColumnIsTextType<StringView> : public std::true_type {
+struct WCDB_API ColumnIsTextType<StringView> : public std::true_type {
 public:
     static ColumnTypeInfo<ColumnType::Text>::UnderlyingType
     asUnderlyingType(const UnsafeStringView &text);
@@ -263,7 +263,7 @@ public:
 
 //BLOB
 template<>
-struct ColumnIsBLOBType<std::vector<unsigned char>> : public std::true_type {
+struct WCDB_API ColumnIsBLOBType<std::vector<unsigned char>> : public std::true_type {
 public:
     static ColumnTypeInfo<ColumnType::BLOB>::UnderlyingType
     asUnderlyingType(const std::vector<unsigned char> &blob);
@@ -272,7 +272,7 @@ public:
 };
 
 template<>
-struct ColumnIsBLOBType<UnsafeData> : public std::true_type {
+struct WCDB_API ColumnIsBLOBType<UnsafeData> : public std::true_type {
 public:
     static ColumnTypeInfo<ColumnType::BLOB>::UnderlyingType
     asUnderlyingType(const UnsafeData &blob);
@@ -281,7 +281,7 @@ public:
 };
 
 template<>
-struct ColumnIsBLOBType<Data> : public std::true_type {
+struct WCDB_API ColumnIsBLOBType<Data> : public std::true_type {
 public:
     static ColumnTypeInfo<ColumnType::BLOB>::UnderlyingType
     asUnderlyingType(const UnsafeData &blob);

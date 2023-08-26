@@ -34,7 +34,7 @@ namespace Syntax {
 class ResultColumn;
 class TableOrSubquery;
 
-class SelectCore final : public Identifier {
+class WCDB_API SelectCore final : public Identifier {
 #pragma mark - Lang
 public:
     ~SelectCore() override final;

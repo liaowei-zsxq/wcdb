@@ -35,7 +35,7 @@ class DeleteSTMT;
 class UpdateSTMT;
 class SelectSTMT;
 
-class CreateTriggerSTMT final : public Identifier {
+class WCDB_API CreateTriggerSTMT final : public Identifier {
 #pragma mark - Lang
 public:
     ~CreateTriggerSTMT() override final;

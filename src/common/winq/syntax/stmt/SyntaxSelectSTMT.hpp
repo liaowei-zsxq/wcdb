@@ -35,7 +35,7 @@ namespace Syntax {
 class CommonTableExpression;
 class OrderingTerm;
 
-class SelectSTMT final : public Identifier {
+class WCDB_API SelectSTMT final : public Identifier {
 #pragma mark - Lang
 public:
     ~SelectSTMT() override final;
