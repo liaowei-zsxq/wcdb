@@ -1580,7 +1580,6 @@
 		750080EF2920EDC0009C0F38 /* WCDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 239326611E836D7300D677CC /* WCDB.framework */; };
 		750080F32920F3D5009C0F38 /* WCTFoundation.mm in Sources */ = {isa = PBXBuildFile; fileRef = 39A3341822B0DD9F008EA5D5 /* WCTFoundation.mm */; };
 		750080F42920F4E9009C0F38 /* WCTFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 39A3341722B0DD9F008EA5D5 /* WCTFoundation.h */; };
-		7500828C29222A93009C0F38 /* WCTAPIBridge.mm in Sources */ = {isa = PBXBuildFile; fileRef = 75CE3EFF2812E1A400E132F6 /* WCTAPIBridge.mm */; };
 		7500829329223463009C0F38 /* WCTBridgeMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = 7500829229223463009C0F38 /* WCTBridgeMacro.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		75067CC1293F82B4005DA25B /* AutoAddColumnTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75067CC0293F82B4005DA25B /* AutoAddColumnTests.swift */; };
 		75067CC3293F8300005DA25B /* DatabaseTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75067CC2293F8300005DA25B /* DatabaseTestCase.swift */; };
@@ -10812,7 +10811,6 @@
 				7521DB54291EA349009642EF /* LiteralValue.cpp in Sources */,
 				7521DB55291EA349009642EF /* Declare.swift in Sources */,
 				7521DB56291EA349009642EF /* CheckExpressionConfig.swift in Sources */,
-				7500828C29222A93009C0F38 /* WCTAPIBridge.mm in Sources */,
 				7521DB57291EA349009642EF /* StatementVacuumBridge.cpp in Sources */,
 				7521DB58291EA349009642EF /* Select.swift in Sources */,
 				7521DB59291EA349009642EF /* SyntaxCreateIndexSTMT.cpp in Sources */,
